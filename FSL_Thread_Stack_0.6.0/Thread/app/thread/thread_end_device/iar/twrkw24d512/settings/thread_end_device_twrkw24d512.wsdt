@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>thread_end_device_twrkw24d512/mqxlite_debug</Project><Project>ksdk_mqx_lib/Debug</Project><Project>mqx_twrkw24d512/debug</Project></CurrentConfigs><CurrentProj>thread_end_device_twrkw24d512</CurrentProj><OverviewSelected>0</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>176</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>843</ColumnWidth1><ColumnWidth2>225</ColumnWidth2><ColumnWidth3>56</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>19</ColumnWidth0><ColumnWidth1>1542</ColumnWidth1></Debug-Log>
+    <Find-in-Files><ColumnWidth0>473</ColumnWidth0><ColumnWidth1>78</ColumnWidth1><ColumnWidth2>710</ColumnWidth2><ColumnWidth3>315</ColumnWidth3></Find-in-Files></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-17574-31797</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>&lt;ws&gt;/ksdk_mqx_lib</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/app</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/app/thread</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/app/thread/thread_end_device</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/app/thread/thread_end_device/src</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/framework</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/framework/RNG</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/framework/RNG/Source</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_end_device_twrkw24d512/framework/RNG/Source/RNG.c</ExpandedNode><ExpandedNode>thread_end_device_twrkw24d512</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-22404-32525</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-26252-913</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-28220-26703</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\framework\OSAbstraction\Source\fsl_osa_ext_mqxlite.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>1100</YPos2><SelStart2>39652</SelStart2><SelEnd2>39666</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\FsciMacCommands.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>354</YPos2><SelStart2>487</SelStart2><SelEnd2>487</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\MacGlobals.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>176</YPos2><SelStart2>369</SelStart2><SelEnd2>369</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\src\end_device_app.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>141</YPos2><SelStart2>5986</SelStart2><SelEnd2>5986</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\framework\RNG\Source\RNG.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>261</YPos2><SelStart2>836</SelStart2><SelEnd2>836</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\nwk_ip\base\shell_cmd\shell_commands.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>198</YPos2><SelStart2>7481</SelStart2><SelEnd2>7487</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_stack_config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>50</YPos2><SelStart2>2648</SelStart2><SelEnd2>2648</SelEnd2></Tab><ActiveTab>6</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-011A65F0><key>iaridepm.enu1</key></Toolbar-011A65F0></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2><Row3><Sizes><Toolbar-08C99A78><key>debuggergui.enu1</key></Toolbar-08C99A78></Sizes></Row3></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>439</Bottom><Right>250</Right><x>-2</x><y>-2</y><xscreen>270</xscreen><yscreen>285</yscreen><sizeHorzCX>228041</sizeHorzCX><sizeHorzCY>425373</sizeHorzCY><sizeVertCX>212838</sizeVertCX><sizeVertCY>658209</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>162</Bottom><Right>1186</Right><x>-2</x><y>-2</y><xscreen>1188</xscreen><yscreen>164</yscreen><sizeHorzCX>1003378</sizeHorzCX><sizeHorzCY>244776</sizeHorzCY><sizeVertCX>228041</sizeVertCX><sizeVertCY>425373</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

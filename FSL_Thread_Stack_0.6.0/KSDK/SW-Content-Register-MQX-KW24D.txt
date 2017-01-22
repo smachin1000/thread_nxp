@@ -1,0 +1,35 @@
+Release Name: MQX RTOS for Freescale_KSDK_1.1.0     
+Version: 5.0.1
+
+List of components:
+
+AT&T getopt(3) implementation            
+                          Description: Shell get option code
+                          Version: NA
+                          Author:  AT&T
+                          License: Open Source: Public domain
+                          Format: source code
+                          URL: NA
+                          Location: 
+                          rtos/mqx/nshell/source/shell/sh_util.c
+
+TLSF - Two Level Segregated Fit
+                          Description: Two Level Segregated Fit
+                          Version: 3.0
+                          Author:  Matthew Conte
+                          License: Open Source: Public domain
+                          Format: source code
+                          URL: http://tlsf.baisoku.org/ 
+                          Location: 
+                          rtos/mqx/mqx/source/kernel/tlsf.c
+
+Bootstrap
+                          Description: A collection of tools for 
+                          creating websites and web applications.
+                          Version: 2.3.2
+                          Author:  Twitter
+                          License: Open Source: Apache 2
+                          Format: source code
+                          URL: http://getbootstrap.com/2.3.2/javascript.html
+                          Location: 
+                          rtos/mqx/doc/.doc/

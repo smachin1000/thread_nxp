@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>nshell_twrkw24d512</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/sh_abort.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/mqx/sh_abort.c</locationURI></link><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/sh_kill.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/mqx/sh_kill.c</locationURI></link><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/sh_pause.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/mqx/sh_pause.c</locationURI></link><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/sh_tad.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/mqx/sh_tad.c</locationURI></link><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/sh_prv.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/sh_prv.h</locationURI></link><link><name>Shell_Source/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/mqx/shell.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/shell.h</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_cmdlist.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/sh_cmdlist.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_exit.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/sh_exit.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_help.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/sh_help.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_sh.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/sh_sh.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_util.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/sh_util.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/shell.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/shell/shell.c</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_rtcs.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/sh_rtcs.h</locationURI></link><link><name>Shell_Source/shell</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Shell_Source/shell/sh_enet.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/sh_enet.h</locationURI></link></linkedResources></projectDescription>

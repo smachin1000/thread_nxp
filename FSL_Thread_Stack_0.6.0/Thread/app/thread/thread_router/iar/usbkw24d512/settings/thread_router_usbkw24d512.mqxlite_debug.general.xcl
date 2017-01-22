@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armpemicro.dll" 
+
+"C:\Users\smachin\projects\personal\FSL_Thread_Stack_0.6.0\Thread\app\thread\thread_router\iar\usbkw24d512\mqxlite_debug\Exe\thread_router_twrkw24d512_mqxlite_debug.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\debugger\Freescale\Kxx.dmac" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\Freescale\FlashKW2xDxxx512K.board" 
+
+
+
+

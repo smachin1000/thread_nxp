@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1541</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1155</ColumnWidth1>
+        <ColumnWidth2>308</ColumnWidth2>
+        <ColumnWidth3>77</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>248</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+      <Find-in-Files>
+        
+        
+        
+        
+      <ColumnWidth0>473</ColumnWidth0><ColumnWidth1>78</ColumnWidth1><ColumnWidth2>710</ColumnWidth2><ColumnWidth3>315</ColumnWidth3></Find-in-Files>
+    </Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9087-6597</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-8565-6607</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-10426-6777</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-19836-6600</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512/app</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512/app/thread</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512/app/thread/thread_router</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512/app/thread/thread_router/config</ExpandedNode><ExpandedNode>&lt;ws&gt;/thread_router_twrkw24d512/app/thread/thread_router/src</ExpandedNode><ExpandedNode>thread_router_twrkw24d512</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-30584-6604</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane/><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-001F5208><key>iaridepm.enu1</key></Toolbar-001F5208></Sizes></Row0><Row1><Sizes><Toolbar-08E94908><key>debuggergui.enu1</key></Toolbar-08E94908></Sizes></Row1></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>360</Bottom><Right>339</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>180</yscreen><sizeHorzCX>125000</sizeHorzCX><sizeHorzCY>268657</sizeHorzCY><sizeVertCX>288007</sizeVertCX><sizeVertCY>540299</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>360</Bottom><Right>167</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>180</yscreen><sizeHorzCX>125000</sizeHorzCX><sizeHorzCY>268657</sizeHorzCY><sizeVertCX>142736</sizeVertCX><sizeVertCY>540299</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>241</Bottom><Right>1186</Right><x>-2</x><y>-2</y><xscreen>1188</xscreen><yscreen>243</yscreen><sizeHorzCX>1003378</sizeHorzCX><sizeHorzCY>362687</sizeHorzCY><sizeVertCX>125000</sizeVertCX><sizeVertCY>268657</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

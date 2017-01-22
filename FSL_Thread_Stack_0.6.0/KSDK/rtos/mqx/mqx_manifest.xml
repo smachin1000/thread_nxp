@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ksdk:manifest format_version="1.1" xmlns:ksdk="http://freescale.com/ksdk/1.1/ksdk_manifest.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freescale.com/ksdk/1.1/ksdk_manifest.xsd http://freescale.com/ksdk/1.1/ksdk_manifest.xsd">
+  <!--This file is designed to identify uCOSII RTOS in Kinetis SDK release. -->
+  <components>
+    <component name="mqx" type="os" api_version="1.1">
+      <!-- rtos\mqx\config\common -->
+      <source path="rtos/mqx/config/common" type="c_include">
+        <files mask="*.h"/>
+      </source>
+      <source path="rtos/mqx/config/common" type="asm_include">
+        <files mask="*.h"/>
+      </source>      
+      <!-- rtos\mqx\mqx\source\bsp -->    
+      <source path="rtos/mqx/mqx/source/bsp" type="src">
+        <files mask="init_bsp.c"/>
+      </source> 
+      <source path="rtos/mqx/mqx/source/bsp" type="c_include">
+        <files mask="*.h"/>
+      </source>     
+      <!-- rtos\mqx\mqx\source\include -->    
+      <source path="rtos/mqx/mqx/source/include" type="c_include">
+        <files mask="*.h"/>
+      </source>     
+      <source path="rtos/mqx/mqx/source/include" type="asm_include">
+        <files mask="mqx_cnfg.h"/>
+      </source>          
+      <!-- rtos\mqx\mqx\source\kernel -->    
+      <source path="rtos/mqx/mqx/source/kernel" type="src">
+        <files mask="*.c"/>
+      </source>     
+      <!-- rtos\mqx\mqx\source\nio -->    
+      <source path="rtos/mqx/mqx/source/nio/src" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>        
+      <source path="rtos/mqx/mqx/source/nio/src" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>      
+      <source path="rtos/mqx/mqx/source/nio" type="c_include">
+        <files mask="*.h"/>
+      </source>     
+      <!-- rtos\mqx\mqx\source\nio\drivers\nio_dummy -->    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_dummy/src" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_dummy" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>    
+      <!-- rtos\mqx\mqx\source\nio\drivers\nio_serial -->    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_serial/src" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_serial" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>        
+      <!-- rtos\mqx\mqx\source\nio\drivers\nio_tty -->    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_tty/src" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>    
+      <source path="rtos/mqx/mqx/source/nio/drivers/nio_tty" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>  
+      <!-- rtos\mqx\mqx\source\psp\cortex_m -->    
+      <source path="rtos/mqx/mqx/source/psp/cortex_m" type="c_include">
+        <files mask="*.h"/>
+      </source> 
+      <source path="rtos/mqx/mqx/source/psp/cortex_m" type="asm_include">
+        <files mask="*.inc"/>
+      </source>        
+      <source path="rtos/mqx/mqx/source/psp/cortex_m" type="src">
+        <files mask="*.c"/>
+      </source>  
+      <!-- rtos\mqx\mqx\source\psp\cortex_m\compiler -->  
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/gcc_arm" type="c_include" compiler="gcc">
+        <files mask="*.h"/>
+      </source>  
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/gcc_arm" type="asm_include" compiler="gcc">
+        <files mask="asm_mac.h"/>
+      </source>        
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/gcc_arm" type="src" compiler="gcc">
+        <files mask="*.c"/>
+      </source>  
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/iar" type="c_include" compiler="iar">
+        <files mask="*.h"/>
+      </source>  
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/iar" type="asm_include" compiler="iar">
+        <files mask="asm_mac.h"/>
+      </source>        
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/iar" type="src" compiler="iar">
+        <files mask="*.c"/>
+      </source>
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/rv_mdk" type="asm_include" compiler="arm">
+        <files mask="asm_mac.h"/>
+      </source>  
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/rv_mdk" type="c_include" compiler="arm">
+        <files mask="*.h"/>
+      </source>       
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/compiler/rv_mdk" type="src" compiler="arm">
+        <files mask="*.c"/>
+      </source>      
+      <!-- rtos\mqx\mqx\source\psp\cortex_m\core -->    
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/core/M0" type="src" core="cm0plus">
+        <files mask="*.S"/>
+      </source>
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/core/M0" type="asm_include" core="cm0plus">
+        <files mask="*.inc"/>
+      </source>      
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/core/M4" type="src" core="cm4">
+        <files mask="*.S"/>
+      </source>
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/core/M4" type="asm_include" core="cm4">
+        <files mask="*.inc"/>
+      </source>       
+      <!-- rtos\mqx\mqx\source\psp\cortex_m\cpu   -->    
+      <source path="rtos/mqx/mqx/source/psp/cortex_m/cpu" type="c_include">
+        <files mask="*.h"/>
+      </source> 
+      <!-- rtos\mqx\mqx_stdlib\source -->    
+      <source path="rtos/mqx/mqx_stdlib/source/include" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>    
+      <source path="rtos/mqx/mqx_stdlib/source/stdio" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>   
+      <source path="rtos/mqx/mqx_stdlib/source/stdio" type="c_include" variant="MxqStandardVersion">
+        <files mask="*.h"/>
+      </source>   
+      <source path="rtos/mqx/mqx_stdlib/source/strings" type="src" variant="MxqStandardVersion">
+        <files mask="*.c"/>
+      </source>   
+    </component>
+  </components>
+</ksdk:manifest>

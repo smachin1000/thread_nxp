@@ -1,0 +1,25 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4" 
+
+"--fpu=None" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\Freescale\MKW24D512xxx5.ddf" 
+
+"--drv_verify_download" 
+
+"--semihosting" 
+
+"--device=MKW24D512xxx5" 
+
+"--pemicro_interface_type=OSJtag" 
+
+"--pemicro_reset_delay=" 
+
+"--drv_communication=USB1" 
+
+
+
+

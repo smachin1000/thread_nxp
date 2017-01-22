@@ -1,0 +1,47 @@
+Freescale Software Content Register
+
+Release - Thread Stack 0.6.0
+
+Date Created:              2015-Feb-27
+
+
+Package:                   Freescale Thread Stack
+Outgoing License:          LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+License Files:             COPYING: LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+Package Category:          Network Protocol stack
+Type of content:           Binaries, Source code and Header Files
+Description and comments:  Freescale Thread Stack Network layers
+Location:                  thread/nwk_ip, thread/app
+Origin:                    Freescale
+
+
+Package:                   Freescale IEEE 802.15.4 MACPHY
+Outgoing License:          LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+License Files:             COPYING: LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+Package Category:          Network Protocol stack
+Type of content:           Binaries, Source code and Header Files
+Description and comments:  Freescale IEEE 802.15.4 MACPHY LAYER 
+Location:                  thread/ieee_802_15_4
+Origin:                    Freescale
+
+
+Package:                   Freescale Connectivity Framework
+Outgoing License:          Open Source - BSD-3-Clause
+License Files:             COPYING: Open Source - BSD-3-Clause
+Package Category:          Middleware for Connectivity stacks
+Type of content:           Binaries, Source code and Header Files
+Description and comments:  Freescale IEEE 802.15.4 MACPHY LAYER 
+Location:                  thread/framework, thread/drv
+Origin:                    Freescale
+
+
+Package:                   Freescale Connectivity SecLib
+Outgoing License:          LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+License Files:             COPYING: LA_OPT_FSL_OPEN_3RD_PARTY_IP v6 February 2015
+Package Category:          Middleware for Connectivity stacks
+Type of content:           Binaries, Source code and Header Files
+Description and comments:  Freescale IEEE 802.15.4 MACPHY LAYER 
+Location:                  thread/framework/utils/SecLib
+Origin:                    Freescale
+
+

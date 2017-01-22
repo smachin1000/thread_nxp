@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\thread_router_fsci_usbkw24d512.ewp</path>
+  </project>
+    <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\build\iar\mqx_usbkw24d512\mqx_usbkw24d512.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\KSDK\lib\ksdk_mqx_lib\iar\KW24D5\ksdk_mqx_lib.ewp</path>
+  </project>
+    <project>
+    <path>$WS_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\build\iar\usbd_sdk_twrkw24d512_mqx\usbd_sdk_twrkw24d512_mqx.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>debug</name>
+      <member>
+        <project>ksdk_mqx_lib</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>mqx_usbkw24d512</project>
+        <configuration>debug</configuration>
+      </member>
+      <member>
+        <project>thread_router_fsci_usbkw24d512</project>
+        <configuration>mqxlite_debug</configuration>
+      </member>
+      <member>
+        <project>usbd_sdk_twrkw24d512_mqx</project>
+        <configuration>Debug</configuration>
+      </member>
+    </batchDefinition>
+    <batchDefinition>
+      <name>release</name>
+      <member>
+        <project>ksdk_mqx_lib</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>mqx_usbkw24d512</project>
+        <configuration>release</configuration>
+      </member>
+      <member>
+        <project>thread_router_fsci_usbkw24d512</project>
+        <configuration>mqxlite</configuration>
+      </member>
+      <member>
+        <project>usbd_sdk_twrkw24d512_mqx</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

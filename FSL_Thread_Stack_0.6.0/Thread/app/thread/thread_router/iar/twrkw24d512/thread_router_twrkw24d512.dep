@@ -1,0 +1,2569 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4256552258</fileChecksum>
+  <configuration>
+    <name>mqxlite</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>mqxlite_debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\common\src\app_init\app_init.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\app_temp_sensor\app_temp_sensor.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\app_init\app_init.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\config\thread_manager_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\config\app_to_fwk_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\config\app_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\config\app_to_mac_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\app_temp_sensor\app_temp_sensor.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\config\app_to_stack_config.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SecLib.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciMacCommands.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_cmdhist.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mpl_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_cmdhelp.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Keyboard.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Flash_Adapter.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashProgram.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\LED.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashInit.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\app_temp_sensor.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashVerifySection.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\router_app.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\CopyToRam.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashEraseSector.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_autocomplete.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyTime.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Reset.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Eeprom_AT45DB161E.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Exe\thread_router_twrkw24d512_mqxlite_debug.out</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciCommunication.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Eeprom_InternalFlash.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashCommandSequence.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PWRLib.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PWR.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciLogging.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciCommands.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\socket_app_utils.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciMain.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Messaging.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MemManager.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\NV_FsciCommands.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\NV_Flash.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SerialManager.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Panic.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\RNG.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ip_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\app_init.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\OtaSupport.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\fsl_osa_ext_mqxlite.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\TimersManager.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\TMR_Adapter.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\usb_descriptor.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_nwk_data_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_cmdhelp.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\RNG.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_cmdhist.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ip_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FunctionLib.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MCR20Drv.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SerialManager.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_router_twrkw24d512.pbd</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\GenericList.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SecLib.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciMacCommands.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MacGlobals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_autocomplete.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ASP.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyDebug.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MPM.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyISR.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyPlmeData.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyStateMachine.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyTime.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\init_bsp.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SPI.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mqx_main.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\gpio_pins.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyPacketProcessor.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\hardware_init.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\pin_mux.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\fsci_commands.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ip_if_6LowPan.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_commands.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\coap_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\dhcp_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mle_globals.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mpl_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nd_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ripng_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\sockets_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\tcp_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\trickle_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\event_manager_globals.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\udp_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\debug_log.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mac_abs_802154.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\sixlowpan_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mac_filtering.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nv_data.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_routing_globals.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\stack_start.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Exe\thread_router_twrkw24d512_mqxlite_debug.srec</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\device\MK21DA5\MK21DA5.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nvm_adapter.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\startup\MK21DA5\system_MK21DA5.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_manager_config.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\core_cmSimd.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_pmc_hal.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\usb_descriptor.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\device\fsl_device_registers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\device\MK21DA5\MK21DA5_features.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\device\MK21DA5\MK21DA5_registers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_adc16_hal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\CMSIS\Include\device\MK21DA5\fsl_bitaccess.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\UART_Adapter.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\TMR_Adapter.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_adc16_driver.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\debug_log.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SPI_Adapter.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MemManager.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\NV_Flash.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PWR.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PWRLib.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\NV_FsciCommands.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Messaging.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\OtaSupport.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciMain.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciLogging.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciCommands.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\virtual_com.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Eeprom_InternalFlash.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Reset.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\router_app.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SPI_Adapter.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FsciCommunication.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashProgram.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Flash_Adapter.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Keyboard.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashInit.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\fsl_osa_ext_mqxlite.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\LED.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\CopyToRam.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\app_init.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\app_temp_sensor.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\stack_start.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashVerifySection.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Eeprom_AT45DB161E.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nvm_adapter.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashCommandSequence.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FlashEraseSector.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nv_data.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mac_filtering.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\fsci_commands.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\udp_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\socket_app_utils.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\trickle_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\sockets_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\tcp_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mac_abs_802154.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\virtual_com.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\TimersManager.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_manager_config.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\sixlowpan_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ripng_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_nwk_data_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\nd_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\thread_routing_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mle_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\dhcp_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\coap_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\shell_commands.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ip_if_6LowPan.o</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\sources\classes\include\usb_class_cdc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_llwu_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_lptmr_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_mcg_hal_modes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\adapter\sources\adapter_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb_misc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\utilities\inc\fsl_debug_console.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_rtc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\include\usb_device_stack_interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\include\twrkw24d512\usb_device_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_mcg_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb_desc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\adapter\sources\sdk\adapter_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\adapter\sources\sdk\adapter_sdk.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_ftm_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb_error.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\ip_if_vtun.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\usb_opt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\src\sim\MK21DA5\fsl_sim_hal_MK21DA5.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_sim_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\src\clock\MK21DA5\fsl_clock_MK21DA5.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_ftm_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_rtc_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\sources\classes\include\usb_class.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\adapter\sources\adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\include\compiler.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\inc\fsl_clock_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_gpio_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_port_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx_inc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_gpio_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_dspi_master_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psptypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\config\mqx_sdk_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx_cnfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\osa\inc\fsl_os_abstraction_mqx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\osa\inc\fsl_os_abstraction.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_dspi_slave_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_dspi_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\lib_mqx.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\linker\MKW24D5\iar\MKW24DN512Axxx5_connectivity.icf</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\lib\ksdk_mqx_lib\iar\KW24D5\debug\libksdk_platform_mqx.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\List\thread_router_twrkw24d512_mqxlite_debug.map</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\include\FTFx_KX_flash_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mem_prv.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx_prv.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_prv.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_abi.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\inc\fsl_hwtimer_pit.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\inc\fsl_hwtimer.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\inc\fsl_hwtimer_systick.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\i2c_abstraction.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_uart_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\sources\classes\cdc\usb_cdc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\sources\classes\cdc\usb_cdc_pstn.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_pit_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\usb\usb_core\device\sources\classes\include\config\usb_cdc_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_pit_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\inc\fsl_uart_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_comp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_cpudef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\mqx_cpudef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\comp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_supp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx_ioc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\mqx_macros.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\queue.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\lwsem.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_cpu.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\kinetis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\nvic.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\kinetis_mpu.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\cortex.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_time.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\mqx\psp_math.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\lwevent.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\lwmsgq.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\include\task.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\lib\twrkw24d512.iar\debug\config\user_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\system\inc\fsl_interrupt_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_lptmr_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Interface\KW2xD\PWR_Interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Interface\KW2xD\PWR_Configuration.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Interface\KW2xD\LPMConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\hal\inc\fsl_smc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\socket_app_utils\socket_app_utils.c</file>
+      <file>$PROJ_DIR$\..\..\config\thread_router_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\common\src\socket_app_utils\socket_app_utils.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\LED\Interface\LED.h</file>
+      <file>$PROJ_DIR$\..\..\src\router_app.c</file>
+      <file>$PROJ_DIR$\..\..\src\router_app.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Eeprom\Interface\Eeprom.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Eeprom\Source\Eeprom_AT45DB161E.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Eeprom\Source\Eeprom_InternalFlash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\include\SSD_FTFx.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\include\SSD_FTFx_Common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\include\SSD_FTFx_Internal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\include\SSD_Types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\CopyToRam.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashCommandSequence.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashEraseSector.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashInit.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashProgram.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashVerifySection.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Flash_Adapter\Flash_Adapter.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Flash_Adapter\Flash_Adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Keyboard\Interface\Keyboard.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Keyboard\Interface\KeyboardConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Keyboard\Source\Keyboard.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Common\EmbeddedTypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\LED\Source\LED.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\LED\Interface\LED_Config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Reset\Reset.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\SPI_Adapter\SPI_Adapter.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\SPI_Adapter\SPI_Adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\TMR_Adapter\TMR_Adapter.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\TMR_Adapter\TMR_Adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\UART_Adapter\UART_Adapter.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\UART_Adapter\UART_Adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\usb_descriptor.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\usb_descriptor.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\virtual_com.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\virtual_com.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\VirtualComInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Interface\FSCIConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommands.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommands.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Interface\FsciInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommunication.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciLogging.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommunication.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciMain.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Source\KW2xD\PWR.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Source\KW2xD\PWRLib.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\MemManager\Interface\MemManagerConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Source\KW2xD\PWRLib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Interface\NVMConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\MemManager\Interface\MemManager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\MemManager\Source\MemManager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Messaging\Interface\Messaging.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Messaging\Source\Messaging.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Interface\NVM_Interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_Flash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_Flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Panic\Interface\Panic.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_FsciCommands.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_FsciCommands.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\OSAbstraction\Interface\fsl_osa_ext.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\OSAbstraction\Interface\fsl_osa_ext_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\OSAbstraction\Source\fsl_osa_ext_mqxlite.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\OtaSupport\Interface\OtaSupport.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\OtaSupport\Source\OtaSupport.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Panic\Source\Panic.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Interface\shell.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Panic\Interface\PanicConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\RNG\Source\RNG.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\RNG\Interface\RNG_Interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\SerialManager\Interface\SerialManager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\SerialManager\Interface\SerialManagerConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\SerialManager\Source\SerialManager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\Lists\GenericList.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Interface\shell_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_cmdhelp.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_autocomplete.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_cmdhist.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\TimersManager\Interface\TimersManager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\TimersManager\Interface\TimersManagerConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\TimersManager\Source\TimersManager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\TimersManager\Source\TimersManagerInternal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\FunctionLib\FunctionLib.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\FunctionLib\FunctionLib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\Lists\GenericList.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\lib_crypto_IAR_M4.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\lib_mmcau.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\ModuleInfo\ModuleInfo.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\SecLib.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\SecLib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\mmcau_interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\SecLibConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\MacGlobals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\FsciMacCommands.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\MacGlobals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Mac\Interface\MacFunctionalityDefines.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\ASP.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Mac\Interface\MacConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Mac\Interface\MacInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Mac\Interface\MacMessages.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Mac\Interface\MacTypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\AspInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\MpmInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\Phy.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\PhyConfig.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\PhyDebug.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\PhyInterface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\PhyMessages.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Interface\PhyTypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MCR20Drv\MCR20Drv.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MCR20Drv\MCR20Drv.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MCR20Drv\MCR20Overwrites.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MCR20Drv\MCR20Reg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MPM.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\bsp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyDebug.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyISR.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyPacketProcessor.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyPlmeData.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyStateMachine.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyTime.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\XcvrSpi\SPI.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\XcvrSpi\SPI.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Lib\Freescale_802.15.4_MAC_06_M4_IAR.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\board.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\init_bsp.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\bsp_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\mqx_main.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\config\common\lite_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\config\common\verif_enabled_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\pin_mux.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\gpio_pins.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\gpio_pins.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\hardware_init.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\pin_mux.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\fsci_commands.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\fsci_cmd\fsci_commands.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\debug_log.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\mac_abs_802154.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\mac_abs_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\mac_filtering.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\nvm_adapter.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\nv_data.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\mac_filtering_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\ip_media_if\ip_if_6LowPan.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\mac_abs_802154.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\interface\shell_commands.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\shell_cmd\shell_commands.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\coap_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\dhcp_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\event_manager_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\ip_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\mle_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\mpl_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\nd_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\ripng_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\sixlowpan_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\sockets_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\tcp_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\thread_nwk_data_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\thread_routing_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\trickle_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\udp_globals.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\thread_config\thread_manager_config.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\debug_log.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\mac_filtering.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\stack_start.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\nvm_adapter.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\nv_data.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\coap.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\coap_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp6_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp6.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp6_client.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp6_server.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp6_lq_client.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dtls_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp_client.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dhcp_server.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\dtls.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\event_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\icmp_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\icmp4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\icmp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\icmp6.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\ip_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\ip4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\ip.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\ip6.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\ip_if_management.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mle_basic.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mle_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mle.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\nd_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mle_extended.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mle_security.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mpl_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\mpl.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\nd_events.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\nd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\nd_tables.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\network_utils.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\nwk_params.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\session.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan_ib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan_tbl.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan_fwd_thread.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sockets.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sixlowpan_interface.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\stack_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\sockets_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\stack_events.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\tcp_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\stack_manager_if.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\tcp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_router.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_network_data.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_security.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_routing.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_stack_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\thread_state_machine.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\trickle.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\trickle_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\udp_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\udp.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\virtual_tun_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\lib\thread\thread_m4.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\nwk_ip\core\interface\virtual_enet_driver.h</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\UART_Adapter.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\event_manager_globals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\pin_mux.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\mqx_main.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyStateMachine.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\init_bsp.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\gpio_pins.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\SPI.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\Panic.pbi</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\hardware_init.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyPlmeData.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyDebug.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MCR20Drv.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyISR.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\ASP.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MacGlobals.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\MPM.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\GenericList.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\PhyPacketProcessor.o</file>
+      <file>$PROJ_DIR$\mqxlite_debug\Obj\FunctionLib.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\src\app_init\app_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371 316 117 49 119 6 361 5 113 372 399 434 352 114 115 109 344 314 377 388 312 481 362 363 482 4 108 391 293 346 311 0 439 110 98 70 112 342 393 392 390 123 367 505 479 90 118 121 122 401 397 400 339 341 353 120 495 358 480 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 108 110 113 90 70 49 112 117 118 98 121 119 109 115 122 114 399 401 344 314 377 342 339 397 400 391 390 393 388 392 361 293 316 434 346 341 371 372 311 312 352 353 120 123 0 495 439 367 358 362 363 481 479 505 517 482 480</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 29 246</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\src\app_temp_sensor\app_temp_sensor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 128 122 314 90 133 6 140 113 117 49 123 110 119 124 1 70 112 134 98 121 108 5 4 125 126 376 118 136 132 135 130 129 114 115 109 137 339 131 377</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 124 123 136 125 132 140 133 135 130 128 108 98 121 119 109 115 122 114 134 137 131 129 126 1 376 342 377 339</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mqxlite_debug\Exe\thread_router_twrkw24d512_mqxlite_debug.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 246</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 242 47 20 540 193 23 141 192 28 31 527 15 32 24 18 16 21 416 176 36 30 35 10 38 50 545 543 532 535 531 46 195 14 17 378 379 182 175 541 538 40 39 191 12 542 529 189 174 42 41 171 48 44 537 539 544 536 530 26 528 34 33 27 187 45 22 9 43 19 25 13 11 194 186 37 180 533 142 168 181 524 185 188 190 184 52 179 526 177 53 183 239 243 241 240 196 244</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\src\socket_app_utils\socket_app_utils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 292 90 113 372 339 522 505 118 314 123 6 358 136 362 371 481 495 124 132 367 342 352 110 503 517 480 5 4 125 376 8 70 117 49 112 344 363 377 353 120 1 506 131 521 479 482</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 124 123 136 125 132 358 367 362 363 344 377 342 339 376 495 352 353 120 8 292 371 372 1 503 506 505 517 522 131 481 479 482 480 521</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\router_app.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 292 371 483 314 509 495 482 113 505 486 362 6 0 376 432 90 123 377 521 500 518 124 342 293 506 474 118 136 120 522 117 372 490 110 363 316 312 367 5 4 125 8 295 3 358 311 497 507 496 439 70 49 112 352 353 503 131 491 494 481 488 132 344 339 517 479 480 1 511 493 465 499 431 487 512 484 492</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 124 123 136 125 132 0 495 344 377 342 339 352 353 120 8 505 517 295 503 506 522 131 481 371 372 479 482 480 521 292 1 3 509 500 499 431 432 493 494 376 487 491 490 465 511 512 518 484 486 488 358 367 362 363 293 316 311 312 483 497 507 492 474 496 439</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Eeprom\Source\Eeprom_AT45DB161E.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 170</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 296 319 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 231 238 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 237</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Eeprom\Source\Eeprom_InternalFlash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 49 6 113 112 5 4 296 314 110 70 117 118</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 296 314 110 113 90 70 49 112 117 118</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\CopyToRam.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 165</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 113 122 6 301 247 110 112 119 90 117 49 300 134 98 121 108 5 4 299 302 133 118 128 129 114 115 109 137 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashCommandSequence.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 172</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 247 301 112 119 6 70 113 122 90 117 49 300 134 98 121 108 5 4 299 302 133 118 128 129 114 115 109 137 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashEraseSector.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121 134 98 108 300 113 6 117 49 90 301 247 110 70 112 122 119 5 4 299 302 133 118 128 129 114 115 109 137 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashInit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 302 119 300 90 113 6 128 129 114 115 109 137 133 118 108 110 5 4 299 301 247 70 117 49 112 134 98 121 122 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashProgram.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 109 129 114 115 119 137 6 300 302 90 113 133 118 108 110 5 4 299 301 247 70 117 49 112 134 98 121 122 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashVerifySection.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 113 122 6 301 247 110 112 119 90 117 49 300 134 98 121 108 5 4 299 302 133 118 128 129 114 115 109 137 131 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 299 301 300 302 110 113 90 70 49 112 117 118 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Flash_Adapter\Flash_Adapter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 302 128 70 113 300 119 263 265 234 6 314 110 112 129 114 115 109 137 90 230 271 278 376 117 49 133 108 235 281 421 264 5 4 310 236 299 118 301 247 134 98 121 122 280 422 268 124 273 275 131 123 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 310 314 110 113 90 70 49 112 117 118 299 301 300 302 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129 376 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Keyboard\Source\Keyboard.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 314 113 110 119 263 265 234 6 417 117 49 131 90 122 230 271 278 311 236 70 112 427 227 123 134 98 121 108 235 281 421 264 5 4 371 226 118 312 372 424 133 229 130 129 114 115 109 137 280 422 268 124 273 275 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 311 312 371 372 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\LED\Source\LED.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 227 128 316 314 98 110 6 226 113 117 49 90 108 371 70 112 427 131 129 122 133 5 4 293 417 118 372 424 229 123 130 134 114 121 109 119 137 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 293 314 110 113 90 70 49 112 117 118 316 371 372 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\Reset\Reset.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 112 119 6 70 113 137 134 114 117 49 115 131 5 4 128 108 129 98 90 118 121 122 109 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 128 108 110 113 90 70 49 112 117 118 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\SPI_Adapter\SPI_Adapter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 282 119 266 123 130 133 113 6 417 117 49 427 227 90 122 131 230 234 231 70 112 128 134 98 121 108 236 277 267 124 109 274 136 279 238 5 4 319 349 314 237 118 424 226 229 129 114 115 137 233 271 232 269 270 272 264 276 235 280 281 421 422 263 268 265 273 275 278 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 319 314 110 113 90 70 49 112 117 118 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 231 238 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 237 349 359</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\TMR_Adapter\TMR_Adapter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 230 110 264 113 281 220 112 134 98 121 108 90 235 6 236 70 284 421 128 199 427 117 49 122 119 130 263 271 265 278 234 5 4 321 285 225 314 213 118 129 114 115 109 137 131 123 133 280 422 268 124 273 275 200 218 217 233 277 282 232 267 269 270 272 266 276 274 136 279 219 209</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 321 314 110 113 90 70 49 112 117 118 128 108 98 121 119 109 115 122 114 134 137 131 123 129 220 213 133 130 284 199 285 218 217 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 225 219 209 200 427</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\UART_Adapter\UART_Adapter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 526</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 113 112 134 98 121 108 234 90 6 128 70 124 225 256 117 49 122 119 133 280 422 268 273 275 263 217 209 5 4 323 427 314 262 118 129 114 115 109 137 236 235 230 281 421 271 264 265 278 130 131 123 233 277 282 232 267 269 270 272 266 276 274 136 279 218 219 200</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 323 314 110 113 90 70 49 112 117 118 128 108 98 121 119 109 115 122 114 134 137 131 123 129 262 133 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 256 130 225 218 217 219 209 200 427</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\usb_descriptor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 235 124 222 210 234 224 90 113 108 110 6 362 203 280 422 268 273 275 208 328 223 216 201 125 133 118 123 230 281 421 263 271 264 265 128 129 114 115 109 119 137 132 197 5 4 207 205 325 206 202 214 211 212 236 131 70 117 49 112 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 278 314 136 279 363</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 207 208 223 211 201 212 236 110 113 90 70 49 112 117 118 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 224 125 132 203 206 210 202 216 214 205 362 314 363 325 222 197 328</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\drv\Portable\USB_VirtualCom\virtual_com.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 267 214 109 272 124 131 277 274 122 110 132 6 327 125 206 236 113 117 49 282 133 266 230 119 363 208 328 202 211 212 70 112 90 233 271 232 269 270 264 276 134 98 121 108 123 222 257 260 5 4 207 205 362 258 128 223 210 216 201 224 203 235 118 280 281 421 422 234 263 268 265 273 275 129 114 115 137 136 279 325 278 197 314</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 207 208 223 211 201 212 236 110 113 90 70 49 112 117 118 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 224 125 132 203 206 210 202 216 214 205 327 325 222 197 362 314 363 328 258 257 260</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommands.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 362 119 6 333 90 113 329 110 137 332 342 128 118 314 363 377 134 114 121 109 131 117 5 4 330 376 380 70 49 112 339 108 129 98 122 115 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 332 362 363 329 330 333 376 342 377 339 380 128 108 98 121 119 109 115 122 114 134 137 131 123 129</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciLogging.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112 125 113 314 90 6 330 332 342 124 70 5 4 333 376 362 245 110 117 49 339 132 118 329 363 377 123 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 332 362 363 329 333 330 376 342 377 339 125 123 132 124 136</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciCommunication.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314 6 342 113 117 49 332 70 112 363 377 5 4 333 376 349 362 110 90 118 329 339 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 333 314 110 113 90 70 49 112 117 118 362 363 332 329 376 342 377 339 349 359</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\FSCI\Source\FsciMain.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 150</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 363 377 6 333 112 314 332 344 113 117 49 90 5 4 330 342 110 118 329 362 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 332 362 363 329 330 333 342 377 339 344</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Source\KW2xD\PWR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 274 405 122 277 118 90 311 236 342 314 391 286 267 124 109 6 289 131 117 113 110 282 133 266 230 119 234 130 209 128 287 396 362 284 288 344 339 233 271 232 269 270 272 264 276 134 98 121 108 263 363 219 200 5 4 340 371 403 285 225 70 49 112 312 372 399 401 397 400 377 235 123 280 281 421 422 268 265 273 275 129 114 115 137 278 218 390 136 279 217 393 392 388</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 287 311 312 371 372 288 340 286 396 399 401 344 377 342 339 397 400 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 403 405 362 363 285 130 289 225 218 217 219 209 200 284 391 390 393 388 392</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\LPM\Source\KW2xD\PWRLib.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 146</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 321 133 230 112 110 113 391 134 98 121 108 234 128 6 371 221 70 288 282 266 130 340 403 285 289 117 49 311 314 213 122 119 90 284 277 267 124 109 274 136 279 218 204 388 5 4 287 405 236 199 198 118 286 312 372 220 129 114 115 137 131 123 233 271 232 269 270 272 264 276 217 393 392 390 235 280 281 421 422 263 268 265 273 275 278 401</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 340 286 287 311 312 371 372 288 403 405 321 128 108 98 121 119 109 115 122 114 134 137 131 123 129 220 213 133 130 284 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 285 199 218 217 221 204 198 289 391 390 393 388 401 392</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\MemManager\Source\MemManager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 110 113 281 264 117 49 133 123 421 119 377 6 342 230 263 271 265 128 129 114 115 109 137 314 236 70 112 235 90 280 422 234 268 124 273 275 108 278 5 4 349 118 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 359 136 279 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 349 359 342 377 339</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Messaging\Source\Messaging.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117 233 49 230 121 377 270 134 98 113 314 232 272 264 108 234 6 236 110 90 271 269 276 278 342 70 112 131 277 282 267 124 133 266 109 274 122 119 5 4 344 118 339 235 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 342 377 339 344 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_Flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 280 310 422 275 341 113 268 273 123 128 6 371 344 117 49 346 332 314 235 90 234 124 108 110 232 339 348 376 70 112 362 133 230 281 421 263 271 264 265 129 114 115 109 119 137 272 5 4 350 361 236 118 329 363 372 131 233 277 282 267 269 270 266 276 274 134 98 121 122 136 279 301 247 342 278 299 300 302 377</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 348 346 341 350 332 362 363 329 371 372 361 376 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 310 299 301 300 302 247 344 377 342 339</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\NVM\Source\NV_FsciCommands.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 147</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 376 70 113 332 117 112 314 342 5 4 344 346 110 90 118 49 362 339 329 363 377 341</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 332 362 363 329 344 377 342 339 376 346 341</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\OSAbstraction\Source\fsl_osa_ext_mqxlite.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118 90 353 280 422 275 232 113 268 273 6 124 235 234 108 110 123 352 120 133 230 281 421 263 271 264 265 128 129 114 115 109 119 137 272 5 4 314 236 377 70 117 49 112 131 233 277 282 267 269 270 266 276 274 134 98 121 122 136 279 278</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 352 353 120 123 236 133 131 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 377</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\OtaSupport\Source\OtaSupport.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 263 265 234 6 342 118 90 339 314 299 133 108 110 131 123 230 271 278 355 310 113 300 302 129 114 115 109 119 137 235 281 421 264 5 4 296 376 236 70 117 49 112 377 301 247 134 98 121 122 280 422 268 124 273 275 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 355 296 342 377 339 376 310 299 301 300 302 133 247 128 108 98 121 119 109 115 122 114 134 137 131 123 129 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Panic\Source\Panic.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 534</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 359 110 281 264 123 421 119 234 6 118 90 230 263 271 265 113 128 129 114 115 109 137 278 236 280 422 268 124 273 275 108 5 4 349 314 70 117 49 112 133 235 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 349 314 110 113 90 70 49 112 117 118 359 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\RNG\Source\RNG.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 383 219 6 382 90 113 108 110 133 314 128 118 129 114 115 109 119 137 130 209 5 4 361 225 376 70 117 49 112 134 98 121 122 123 218 131 217 200 384</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 361 314 110 113 90 70 49 112 117 118 128 108 98 121 119 109 115 122 114 134 137 131 123 129 225 133 130 218 217 219 209 200 382 384 376 383</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\SerialManager\Source\SerialManager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 314 262 234 227 134 98 121 108 6 344 226 117 49 339 110 90 124 130 349 363 70 112 342 122 119 236 133 280 422 268 273 275 263 5 4 362 376 323 427 118 359 377 128 256 129 114 115 109 137 235 230 281 421 271 264 265 278 131 123 233 277 282 232 267 269 270 272 266 276 274 136 279 229</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 362 314 110 113 90 70 49 112 117 118 363 349 359 342 377 339 344 376 323 128 108 98 121 119 109 115 122 114 134 137 131 123 129 262 133 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 256 130 427 226 227 229</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 314 359 90 367 131 110 119 6 362 245 377 122 358 349 118 363 427 227 123 128 134 98 121 108 5 4 124 376 342 417 125 136 70 117 49 112 344 339 424 226 133 229 130 129 114 115 109 137 132</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 124 113 90 70 49 112 117 118 123 136 358 367 314 110 362 363 344 377 342 339 376 349 359 417 427 424 226 131 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 125 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Utils\Lists\GenericList.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 543</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 113 277 274 122 267 124 109 234 6 110 112 235 117 282 133 266 230 119 278 236 49 90 233 271 232 269 270 272 264 276 134 98 121 108 131 5 4 377 314 118 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 377 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_cmdhelp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 314 6 342 118 90 123 124 344 113 5 4 358 376 380 367 362 70 117 49 112 363 377 339 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 358 367 314 110 113 90 70 49 112 117 118 362 363 344 377 342 339 124 123 136 376 380</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_autocomplete.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 314 6 113 344 358 118 377 5 4 124 376 123 136 70 117 49 112 110 342 367 362 363 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 124 113 90 70 49 112 117 118 123 136 358 367 314 110 362 363 344 377 342 339 376</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Shell\Source\shell_cmdhist.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 367 70 113 6 112 342 314 90 376 362 117 49 363 5 4 358 124 344 110 118 377 339 123 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 358 367 314 110 113 90 70 49 112 117 118 362 363 344 377 342 339 376 124 123 136</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\TimersManager\Source\TimersManager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 422 133 130 261 128 110 314 280 112 113 134 98 121 108 273 263 200 6 349 70 372 268 275 204 374 236 427 117 49 213 122 119 90 234 124 219 5 4 371 321 221 225 118 359 220 129 114 115 109 137 235 230 281 421 271 264 265 278 218 131 123 284 233 277 282 232 267 269 270 272 266 276 274 136 279 259 217 209</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 374 371 372 349 359 321 128 108 98 121 119 109 115 122 114 134 137 131 123 129 220 213 133 130 284 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 221 204 261 259 225 218 217 219 209 200 427</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Utils\FunctionLib\FunctionLib.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 545</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112 6 70 113 314 117 49 5 4 376 110 90 118</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 376 314 110 113 90 70 49 112 117 118</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\framework\Utils\SecLib\SecLib.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 113 6 314 376 383 339 117 112 5 4 342 382 377 110 90 118 49 384</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 342 314 110 113 90 70 49 112 117 118 377 339 376 382 384 383</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\MacGlobals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 541</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 397 349 276 131 118 90 110 269 271 314 6 391 233 232 270 272 264 230 134 98 121 108 236 395 113 117 277 282 267 124 133 266 109 274 122 119 278 234 377 5 4 387 399 380 70 49 112 235 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 390 401 400 136 279 393 392 388 344 342 339 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 387 390 391 393 388 401 392 399 344 377 342 339 397 400 395 380 349 359</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\App\FsciMacCommands.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 113 314 6 112 377 376 399 117 49 339 390 397 5 4 342 391 110 90 118 393 392 401 400 388 344</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 376 342 377 339 391 390 393 388 401 392 399 344 397 400</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\ASP.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 540</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 267 376 109 124 277 274 122 230 314 6 399 90 113 131 117 110 282 133 266 119 377 359 236 394 403 118 233 271 232 269 270 272 264 276 134 98 121 108 278 234 401 400 5 4 396 395 342 349 405 70 49 112 235 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 397 136 279 344 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 396 399 401 344 377 342 339 397 400 395 394 376 349 359 403 405</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MCR20Drv\MCR20Drv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 538</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 123 119 118 90 113 129 114 137 133 128 417 109 263 265 234 6 226 427 227 110 230 271 278 405 314 131 108 235 281 421 264 5 4 403 415 236 70 117 49 112 424 229 130 134 98 121 122 280 422 268 124 273 275 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 403 314 110 113 90 70 49 112 117 118 405 415 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\MPM.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 542</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 230 121 70 113 233 314 270 134 98 232 272 264 108 377 6 376 110 112 90 271 269 276 234 395 349 117 49 236 131 277 282 267 124 133 266 109 274 122 119 136 279 401 400 5 4 396 342 118 399 235 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 397 278 344 339 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 395 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 399 401 344 377 342 339 397 400 396 376 349 359</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyDebug.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 537</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 279 272 264 344 232 108 314 233 270 230 134 98 121 6 396 118 90 339 110 271 269 276 136 403 113 236 342 131 117 277 282 267 124 133 266 109 274 122 119 234 5 4 405 398 70 49 112 399 401 397 400 377 235 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 278</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 403 405 396 399 401 344 377 342 339 397 400 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 398</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyISR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 539</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 226 110 112 128 399 377 263 265 234 6 405 70 131 90 134 98 121 108 314 230 271 278 417 117 49 427 227 123 122 119 130 401 400 235 281 421 264 5 4 403 396 236 118 424 133 229 129 114 115 109 137 397 280 422 268 124 273 275 344 342 339 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 403 405 396 399 401 344 377 342 339 397 400 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyPacketProcessor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 544</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 236 110 401 90 108 421 70 113 6 405 112 128 400 235 281 264 230 417 396 117 49 427 227 123 129 114 115 109 119 137 399 314 377 263 271 265 278 234 5 4 403 404 395 226 118 424 133 229 130 134 98 121 122 397 280 422 268 124 273 275 344 342 339 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 403 405 404 396 399 401 344 377 342 339 397 400 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282 395</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyPlmeData.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 536</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124 234 131 110 112 235 90 108 314 6 405 70 113 280 422 268 273 275 230 377 236 401 117 49 133 123 281 421 263 271 264 265 128 129 114 115 109 119 137 278 400 5 4 403 396 399 118 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 397 136 279 344 342 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 403 405 396 399 401 344 377 342 339 397 400</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyStateMachine.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 530</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 349 90 108 112 235 234 124 230 342 314 6 399 394 70 113 280 422 268 273 275 131 403 117 49 133 123 281 421 263 271 264 265 128 129 114 115 109 119 137 278 236 5 4 396 344 376 405 395 118 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 339 359 136 279 401 397 400 377</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 399 401 344 377 342 339 397 400 396 349 359 376 403 405 394 395</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\MKW2xD\PhyTime.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 112 235 90 108 234 124 6 405 70 113 280 422 268 273 275 236 376 117 49 133 123 230 281 421 263 271 264 265 128 129 114 115 109 119 137 399 397 377 5 4 314 403 396 118 131 233 277 282 232 267 269 270 272 266 276 274 134 98 121 122 278 401 400 136 279 344 342 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 403 405 396 399 401 344 377 342 339 397 400 376</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\ieee_802_15_4\Source\Phy\Source\XcvrSpi\SPI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 533</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112 110 217 131 130 108 133 6 427 70 113 415 238 117 49 417 227 123 129 114 115 109 119 137 128 200 5 4 314 225 90 118 424 226 229 134 98 121 122 209 218 219</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 415 417 427 424 226 131 123 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229 225 218 217 219 209 200 238</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\init_bsp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 531</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 276 277 424 232 250 133 280 234 218 209 6 407 113 421 263 271 264 230 134 98 121 108 123 419 128 283 118 90 422 248 130 268 124 266 109 274 122 119 131 272 254 225 229 253 5 4 228 70 117 49 112 233 249 251 267 269 270 265 273 275 129 114 115 137 136 279 252 235 281 219 226 278 236 417 282 217 200 227 427</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 130 113 90 70 49 112 117 118 283 233 421 422 228 230 234 232 110 133 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 131 123 129 274 275 276 124 136 277 278 279 248 249 250 251 407 236 235 280 281 282 225 218 217 219 209 200 253 254 226 227 229 252 417 427 424 419</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\rtos\mqx\mqx\source\bsp\mqx_main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 529</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 424 272 230 232 264 90 419 130 270 233 119 133 209 6 269 421 113 117 49 265 128 129 114 115 109 137 277 110 217 407 267 124 422 70 112 273 275 108 254 235 281 219 225 229 253 5 4 234 263 268 271 118 266 276 274 134 98 121 122 252 279 280 218 226 131 123 136 236 417 278 282 200 227 427</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 230 234 233 421 422 232 110 113 90 70 49 112 117 118 133 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 131 123 129 274 275 276 124 136 407 277 278 279 236 235 280 281 282 225 130 218 217 219 209 200 253 254 226 227 229 252 417 427 424 419</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\pin_mux.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 528</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122 113 108 6 129 90 227 98 118 121 110 123 133 5 4 128 427 134 114 70 117 49 112 115 119 130 109 137 131</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 128 108 110 113 90 70 49 112 117 118 98 121 119 109 115 122 114 134 137 131 123 129 227 130 133 427</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\gpio_pins.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 532</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114 118 90 226 229 110 6 128 117 130 134 131 113 133 122 5 4 424 70 49 112 123 227 108 129 98 121 109 119 137 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 110 113 90 70 49 112 117 118 131 123 424 226 133 227 130 128 108 98 121 119 109 115 122 114 134 137 129 229</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\KSDK\boards\twrkw24d512\hardware_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 535</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 227 130 118 90 128 133 263 265 234 6 209 134 98 121 113 108 427 110 230 271 278 417 122 119 218 200 235 281 421 264 5 4 225 203 129 114 70 117 49 112 115 109 137 131 123 219 280 422 268 124 273 275 424 226 229 217 236 233 277 282 232 267 269 270 272 266 276 274 136 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 128 108 110 113 90 70 49 112 117 118 98 121 119 109 115 122 114 134 137 131 123 129 417 427 424 226 133 227 130 229 225 218 217 219 209 200 203 236 235 233 421 422 230 234 232 263 264 265 266 267 268 269 270 271 272 273 274 275 276 124 136 277 278 279 280 281 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\fsci_cmd\fsci_commands.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 344 349 479 505 314 500 494 511 113 339 481 495 432 509 463 498 482 504 6 124 496 90 123 132 506 475 488 215 362 483 473 514 118 136 371 342 110 359 329 476 499 491 376 462 518 5 4 8 125 523 332 503 477 428 0 433 517 70 117 49 112 480 352 377 353 120 372 363 522 131 521 478 431 470 493 465 487 490 486 512 484 497</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 505 517 314 110 113 90 70 49 112 117 118 124 123 136 125 132 215 481 495 344 377 342 339 352 353 120 371 372 479 482 480 523 349 359 376 362 363 332 329 503 506 522 131 521 483 477 475 478 476 498 504 432 499 500 431 428 473 470 0 496 509 493 494 487 491 490 465 433 514 486 488 511 512 518 484 462 497 463</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\ip_media_if\ip_if_6LowPan.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 195</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 479 498 110 314 372 376 6 483 90 113 342 123 505 517 495 480 352 118 339 481 499 5 4 8 493 371 482 344 70 117 49 112 377 353 120 494 504 487 500 432 431</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 505 517 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 482 480 483 376 493 494 487 498 504 432 499 500 431</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\mac_abs_802154.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 293 339 500 314 393 123 6 391 90 113 342 431 371 392 390 517 344 110 316 5 4 376 504 433 118 388 432 505 495 70 117 49 112 377 401 499 352 353 120 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 342 377 339 376 391 390 393 388 401 392 431 432 504 499 505 517 500 495 344 352 353 120 123 293 316 433 371 372</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\shell_cmd\shell_commands.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 503 495 511 514 362 371 468 339 90 476 505 314 481 6 376 496 352 118 113 123 131 499 479 487 509 125 477 525 439 342 110 136 132 367 522 521 117 482 372 475 504 255 491 512 486 473 5 4 8 0 124 358 483 498 497 349 493 433 516 515 292 517 344 70 49 112 377 353 120 363 506 480 478 500 432 466 465 488 462 484 463 431 359 494 490 470 518 1</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 505 517 0 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 124 136 125 132 358 367 362 363 503 506 522 131 481 371 372 479 482 480 521 483 477 475 478 476 498 504 432 499 500 431 376 497 525 255 349 359 468 466 465 493 494 487 439 433 496 509 491 490 473 470 516 512 514 486 488 511 518 484 462 463 515 292 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\coap_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 193</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 495 314 342 473 517 6 503 480 352 90 113 123 462 463 479 110 481 5 4 8 497 470 371 482 344 118 339 522 505 70 117 49 112 377 353 120 372 506 131 521</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 462 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 505 517 482 480 503 506 522 131 521 497 463 470 473</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\dhcp_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 495 342 314 479 6 466 469 480 352 123 505 471 90 113 110 372 481 5 4 8 472 467 371 482 344 70 117 118 339 49 112 377 353 120 517 465</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 471 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 505 517 482 480 469 472 466 465 467</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\event_manager_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 527</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 339 110 344 117 49 6 474 314 113 5 4 8 495 90 70 112 342 123 118 352 377 353 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 474 314 110 113 90 70 49 112 117 118 495 344 377 342 339 352 353 120 123</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\ip_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314 110 112 377 6 482 344 70 113 120 481 371 117 49 353 90 5 4 8 495 479 480 352 118 342 339 123 372 505 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 505 517 482 480</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\mle_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352 505 6 485 90 113 353 489 314 377 5 4 8 495 118 120 110 70 117 49 112 344 342 339 123 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 489 314 110 113 90 70 49 112 117 118 495 344 377 342 339 352 353 120 123 485 505 517</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\mpl_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 495 314 6 339 491 352 118 90 113 5 4 8 490 344 342 110 123 70 117 49 112 377 353 120 505 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 491 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 490 505 517</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\nd_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 495 70 113 342 314 517 505 6 479 110 112 123 493 117 49 344 376 5 4 8 494 90 118 352 339 480 377 353 120 481 487 371 482 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 493 314 110 113 90 70 49 112 117 118 495 344 377 342 339 352 353 120 123 494 376 481 371 372 479 505 517 482 480 487</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\ripng_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 377 117 49 113 90 6 371 353 314 481 482 344 110 70 112 120 5 4 8 495 479 480 352 118 342 339 123 372 505 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 505 517 482 480</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\sixlowpan_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 432 498 70 113 314 6 504 110 112 117 49 342 123 505 495 5 4 8 501 500 90 118 344 339 517 352 377 353 120 499 431</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 498 314 110 113 90 70 49 112 117 118 495 344 377 342 339 352 353 120 123 504 432 499 505 517 500 431 501</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\sockets_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 113 314 90 49 5 4 8 110 70 117 118 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 314 110 113 90 70 49 112 117 118</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\tcp_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314 6 481 90 113 510 377 118 112 117 482 344 339 5 4 8 131 508 110 70 49 371 342 123 517 495 505 479 480 352 353 120 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 510 314 110 113 90 70 49 112 117 118 131 123 481 495 344 377 342 339 352 353 120 371 372 479 505 517 482 480 508</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\thread_nwk_data_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 486 352 90 113 120 491 505 503 131 6 481 314 495 490 110 514 509 118 377 482 372 518 473 470 5 4 8 513 488 511 462 70 117 49 112 344 353 500 479 487 371 463 522 521 342 339 123 493 465 499 431 517 432 494 376 480 512 484 497 506</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 514 486 314 110 113 90 70 49 112 117 118 495 344 377 342 339 352 353 120 123 488 509 500 499 505 517 431 432 493 494 376 481 371 372 479 482 480 487 491 490 465 511 512 518 484 462 503 506 522 131 521 497 463 470 473 513</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\thread_routing_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 117 49 120 6 371 516 481 482 344 110 70 112 314 377 5 4 8 512 495 505 517 479 480 352 90 118 353 342 339 123 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 516 512 505 517 481 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 371 372 479 482 480</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\trickle_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 90 6 117 49 377 519 520 344 353 505 5 4 8 495 314 352 110 70 112 120 118 342 339 123 517</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 519 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 520 505 517</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\stack_globals\udp_globals.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 177</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371 118 90 113 123 6 481 342 314 517 495 505 522 110 5 4 8 131 521 70 117 49 112 482 344 339 479 480 352 377 353 120 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 522 314 110 113 90 70 49 112 117 118 131 123 481 495 344 377 342 339 352 353 120 371 372 479 505 517 482 480 521</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\thread_config\thread_manager_config.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314 494 8 353 518 6 433 0 493 113 117 49 377 90 432 479 495 509 511 517 465 344 110 70 112 120 376 5 4 3 502 505 500 491 352 118 342 339 123 499 431 480 488 486 481 487 371 482 372 490 512 484</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 3 8 505 517 509 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 500 499 431 432 493 494 376 481 371 372 479 482 480 487 491 490 465 0 511 512 518 484 486 488 502 433</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\debug_log.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352 339 314 6 376 118 342 120 90 113 5 4 430 371 349 245 110 70 117 49 112 372 353 123 377 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 430 314 110 113 90 70 49 112 117 118 120 123 376 371 372 342 377 339 349 359 352 353</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\mac_filtering.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 117 505 6 433 359 342 70 49 5 4 349 436 434 314 110 90 118 112 377 339 8 517 432</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 349 314 110 113 90 70 49 112 117 118 359 342 377 339 436 8 505 517 433 432 434</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\stack_start.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352 113 493 431 314 118 90 479 495 6 0 339 505 376 509 465 342 110 123 499 517 432 494 480 5 4 8 496 500 491 344 70 117 49 112 377 353 120 481 487 371 482 372 490</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 509 495 314 110 113 90 70 49 112 117 118 344 377 342 339 352 353 120 123 500 499 505 517 431 432 493 494 376 481 371 372 479 482 480 487 491 490 465 496 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\nvm_adapter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 271 70 113 133 90 269 276 279 6 505 377 110 112 233 232 270 272 264 230 134 98 121 108 136 314 342 236 349 117 49 517 235 277 282 267 124 266 109 274 122 119 234 5 4 8 376 346 434 339 118 341 131 123 280 281 421 422 263 268 265 273 128 275 129 114 115 137 278 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 8 342 314 110 113 90 70 49 112 117 118 377 339 376 505 517 346 341 236 133 131 123 235 233 421 422 230 234 232 263 264 265 266 109 267 268 269 270 271 272 273 128 108 98 121 119 115 122 114 134 137 129 274 275 276 124 136 277 278 279 280 281 282 434 349 359</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\nwk_ip\base\utils\nv_data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 174</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 499 123 505 481 495 433 371 471 342 314 490 6 435 432 113 117 49 346 110 372 8 501 469 466 493 376 70 112 482 344 339 500 431 504 465 479 5 4 498 464 472 467 491 519 434 90 118 341 517 480 352 377 353 120 520 494 487</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 291 5 4 6 314 110 113 90 70 49 112 117 118 8 346 341 435 505 517 481 495 344 377 342 339 352 353 120 123 371 372 479 482 480 499 504 432 500 431 501 498 469 464 471 472 466 465 467 490 491 493 494 376 487 519 520 433 434</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

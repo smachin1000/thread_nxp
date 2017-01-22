@@ -1,0 +1,2373 @@
+<?xml version="1.0"?>
+<NetworkIP>
+    <Commands>
+        <NWKConfiguration>
+            <GroupDesc>NWK Configuration commands</GroupDesc>
+            <Cmd>
+                <CmdName>NwkConfig_Start.Request</CmdName>
+                <CmdDesc>Starts the network. Should be run after setting the configuration parameters.</CmdDesc>
+                <CmdHeader>CE 10</CmdHeader>
+                <CmdParms>
+					<Parm>
+                        <ParmName>StartNetwork</ParmName>
+                        <ParmDesc>Starts the IP stack</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>1</ParmDefaultValue>
+                    </Parm>
+<!--                     <Parm>
+                        <ParmName>StackType</ParmName>
+                        <ParmDesc>Stack</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Thread</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Flip</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>Static</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Device Type</ParmName>
+                        <ParmDesc>Select the device type for the selected stack</ParmDesc>
+                        <ParmSize>0</ParmSize>
+                        <ParmType>tSelect</ParmType>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>StackType</DependName>
+                                <DependMask>0xFF</DependMask>
+                                <DependShift>0x00</DependShift>
+                            </Depend>
+                            <Parm>
+                                <ParmName>Thread</ParmName>
+                                <ParmDesc>Thread type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>00</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>End Device</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Dark Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>Flip</ParmName>
+                                <ParmDesc>Flip type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>03</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>ENET Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>VTUN Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>802154 Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x03</ParmValue>
+                                        <ParmText>802154 Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x04</ParmValue>
+                                        <ParmText>802154 Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>Static</ParmName>
+                                <ParmDesc>Static type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>02</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>DeviceRole</ParmName>
+                        <ParmDesc>Role</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Normal</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Leader</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm> -->
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkConfig_SetMACParameters.Request</CmdName>
+                <CmdDesc>Sets the network parameters. This request can be used to change the default settings. It should be run before starting the Thread stack.</CmdDesc>
+                <CmdHeader>CE 11</CmdHeader>
+                <CmdParms>
+<!--                     <Parm>
+                        <ParmName>StackType</ParmName>
+                        <ParmDesc>Stack</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Thread</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Flip</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>Static</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Device Type</ParmName>
+                        <ParmDesc>Select the device type for the selected stack</ParmDesc>
+                        <ParmSize>0</ParmSize>
+                        <ParmType>tSelect</ParmType>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>StackType</DependName>
+                                <DependMask>0xFF</DependMask>
+                                <DependShift>0x00</DependShift>
+                            </Depend>
+                            <Parm>
+                                <ParmName>Thread</ParmName>
+                                <ParmDesc>Thread type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>00</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>End Device</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Dark Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>Flip</ParmName>
+                                <ParmDesc>Flip type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>03</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>ENET Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>VTUN Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>802154 Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x03</ParmValue>
+                                        <ParmText>802154 Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x04</ParmValue>
+                                        <ParmText>802154 Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>Static</ParmName>
+                                <ParmDesc>Static type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>02</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>DeviceRole</ParmName>
+                        <ParmDesc>Role</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Normal</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Leader</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm> -->
+                    <Parm>
+                        <ParmName>Channel</ParmName>
+                        <ParmDesc>The network's channel.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>17</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>PanID</ParmName>
+                        <ParmDesc>The network's pan ID.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0xFACE</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>ShortAddress</ParmName>
+                        <ParmDesc>Short Address</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x0000</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>ExtendedAddress</ParmName>
+                        <ParmDesc>Extended Address</ParmDesc>
+                        <ParmSize>8</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x146E0A0000000001</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RandomExtendedAddress</ParmName>
+                        <ParmDesc>The extended address is randomly generated or not.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RxOnIdle</ParmName>
+                        <ParmDesc>If Rx is on while idle.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkConfig_AddNodeToWhiteList.Request</CmdName>
+                <CmdDesc>Add in White List Table. The White List will contain the neighbors that can be heard by the device.</CmdDesc>
+                <CmdHeader>CE 12</CmdHeader>
+                <CmdParms>
+                    <!-- <Parm>
+                        <ParmName>StackType</ParmName>
+                        <ParmDesc>Stack</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Thread</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Flip</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>Static</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm> -->
+                <!--     <Parm>
+                        <ParmName>Device Type</ParmName>
+                        <ParmDesc>Select the device type for the selected stack</ParmDesc>
+                        <ParmSize>0</ParmSize>
+                        <ParmType>tSelect</ParmType>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>StackType</DependName>
+                                <DependMask>0xFF</DependMask>
+                                <DependShift>0x00</DependShift>
+                            </Depend>
+                            <Parm>
+                                <ParmName>ThreadDevice</ParmName>
+                                <ParmDesc>Thread type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>02</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>End Device</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Dark Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>FlipDevice</ParmName>
+                                <ParmDesc>Flip type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>03</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>ENET Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>VTUN Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>802154 Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x03</ParmValue>
+                                        <ParmText>802154 Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x04</ParmValue>
+                                        <ParmText>802154 Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>StaticDevice</ParmName>
+                                <ParmDesc>Static type of device</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEnum</ParmType>
+                                <ParmDefaultValue>02</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmItem>
+                                        <ParmValue>0x00</ParmValue>
+                                        <ParmText>Border Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x01</ParmValue>
+                                        <ParmText>Router</ParmText>
+                                    </ParmItem>
+                                    <ParmItem>
+                                        <ParmValue>0x02</ParmValue>
+                                        <ParmText>Node</ParmText>
+                                    </ParmItem>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                        </ParmTypeSpecifics>
+                    </Parm> -->
+                   <!--  <Parm>
+                        <ParmName>DeviceRole</ParmName>
+                        <ParmDesc>Role</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Normal</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Leader</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm> -->
+                    <Parm>
+                        <ParmName>ExtendedAddress</ParmName>
+                        <ParmDesc>Extended Address</ParmDesc>
+                        <ParmSize>8</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>00 00 00 00 00 00 00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>ShortAddress</ParmName>
+                        <ParmDesc>Short Address</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x0000</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>LinkIndicator</ParmName>
+                        <ParmDesc>The neighbor Quality Link Indicator: Good Link: 20 - 255 Medium Link: 11 - 20 Bad Link: 3 - 10.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x00</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkData_SetDHCPServer.Request</CmdName>
+                <CmdDesc>Sets a DHCP Server service for global addresses.</CmdDesc>
+                <CmdHeader>CE 20</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>InterfaceID</ParmName>
+                        <ParmDesc>The interface ID.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>DHCPServerPrefix</ParmName>
+                        <ParmDesc>The prefix to be advertised by the DHCP server.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>PrefixLength</ParmName>
+                        <ParmDesc>The length of the prefix.</ParmDesc>
+                        <ParmSize>4</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                    </Parm>
+<!--                     <Parm>
+                        <ParmName>DHCPEui</ParmName>
+                        <ParmDesc>DHCPEui</ParmDesc>
+                        <ParmSize>8</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x146E0A0000000001</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Short Address</ParmName>
+                        <ParmDesc>Short Address</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x0000</ParmDefaultValue>
+                    </Parm> -->
+                    <Parm>
+                        <ParmName>Stable</ParmName>
+                        <ParmDesc>Stable version of network data.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkData_SetExtRoute.Request</CmdName>
+                <CmdDesc>Adds an external route. A network's External Route Set contains the available external routes off of the network, including both  border routers and the prefixes for which they will route.</CmdDesc>
+                <CmdHeader>CE 21</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>InterfaceID</ParmName>
+                        <ParmDesc>The interface ID.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RouterPrefix</ParmName>
+                        <ParmDesc>The IP prefix of the border router.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>PrefixLength</ParmName>
+                        <ParmDesc>The length of the prefix.</ParmDesc>
+                        <ParmSize>4</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                    </Parm>
+<!--                     <Parm>
+                        <ParmName>BREui</ParmName>
+                        <ParmDesc>BREui</ParmDesc>
+                        <ParmSize>8</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x146E0A0000000001</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Short Address</ParmName>
+                        <ParmDesc>Short Address</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0x0000</ParmDefaultValue>
+                    </Parm> -->
+                    <Parm>
+                        <ParmName>Stable</ParmName>
+                        <ParmDesc>Stable version of network data.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkData_Propagate.Request</CmdName>
+                <CmdDesc>A new version of network data, containing the services previously set, is propagated through the network.</CmdDesc>
+                <CmdHeader>CE 22</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>InterfaceID</ParmName>
+                        <ParmDesc>The interface ID.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Stable</ParmName>
+                        <ParmDesc>Stable version of network data.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tBool</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkData_Register.Request</CmdName>
+                <CmdDesc>The services previously set are registered to network's Leader.</CmdDesc>
+                <CmdHeader>CE 23</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>InterfaceID</ParmName>
+                        <ParmDesc>The interface ID.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </NWKConfiguration>
+        <Socket>
+            <GroupDesc>Socket commands</GroupDesc>
+            <Cmd>
+                <CmdName>Socket-Create.Request</CmdName>
+                <CmdDesc>Creates a new socket in the IP stack.</CmdDesc>
+                <CmdHeader>CE 00</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Domain</ParmName>
+                        <ParmDesc>Socket Domain</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0A</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x0A</ParmValue>
+                                <ParmText>AF_INET6</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>AF_INET</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Type</ParmName>
+                        <ParmDesc>Socket Type</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>Datagram</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Stream</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Protocol</ParmName>
+                        <ParmDesc>Socket Protocol</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>11</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x11</ParmValue>
+                                <ParmText>UDP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x06</ParmValue>
+                                <ParmText>TCP</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Shutdown.Request</CmdName>
+                <CmdDesc>Closes a connection for a socket and clears any data that it uses.</CmdDesc>
+                <CmdHeader>CE 01</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Bind.Request</CmdName>
+                <CmdDesc>Sets the local information for a socket.</CmdDesc>
+                <CmdHeader>CE 02</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Local Ip Address</ParmName>
+                        <ParmDesc>The local IP address.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Local Port</ParmName>
+                        <ParmDesc>The local port.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Domain</ParmName>
+                        <ParmDesc>Socket Domain</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0A</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x0A</ParmValue>
+                                <ParmText>AF_INET6</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>AF_INET</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Send.Request</CmdName>
+                <CmdDesc>Sends data using a connected socket(usually used for sockets over TCP).</CmdDesc>
+                <CmdHeader>CE 03</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Flags</ParmName>
+                        <ParmDesc>Flags</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x40</ParmValue>
+                                <ParmText>MSG_DONTWAIT</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-SendTo.Request</CmdName>
+                <CmdDesc>Sends data using a connected socket(usually used for sockets over UDP).</CmdDesc>
+                <CmdHeader>CE 04</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Flags</ParmName>
+                        <ParmDesc>Flags</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x40</ParmValue>
+                                <ParmText>MSG_DONTWAIT</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RemotePort</ParmName>
+                        <ParmDesc>The remote port.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RemoteIpAddress</ParmName>
+                        <ParmDesc>The remote IP address.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Receive.Request</CmdName>
+                <CmdDesc>Get data received on a connected socket(usually used for sockets over TCP)</CmdDesc>
+                <CmdHeader>CE 05</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data Size</ParmName>
+                        <ParmDesc>Data Size</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0x10</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Flags</ParmName>
+                        <ParmDesc>Flags</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x40</ParmValue>
+                                <ParmText>MSG_DONTWAIT</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-ReceiveFrom.Request</CmdName>
+                <CmdDesc>Get data received on a connected socket(usually used for sockets over UDP)</CmdDesc>
+                <CmdHeader>CE 06</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data Size</ParmName>
+                        <ParmDesc>Data Size</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0x10</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Flags</ParmName>
+                        <ParmDesc>Flags</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>40</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x40</ParmValue>
+                                <ParmText>MSG_DONTWAIT</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Connect.Request</CmdName>
+                <CmdDesc>Connect the socket to a remote socket(in case of UDP, just set the remote information).</CmdDesc>
+                <CmdHeader>CE 07</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Remote Ip Address</ParmName>
+                        <ParmDesc>The remote IP address.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Remote Port</ParmName>
+                        <ParmDesc>The remote port.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Domain</ParmName>
+                        <ParmDesc>Socket Domain</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0A</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x0A</ParmValue>
+                                <ParmText>AF_INET6</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>AF_INET</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Listen.Request</CmdName>
+                <CmdDesc>Prepare a socket for accepting a connection.</CmdDesc>
+                <CmdHeader>CE 08</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Backlog</ParmName>
+                        <ParmDesc>Backlog</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Accept.Request</CmdName>
+                <CmdDesc>Accept a connection from a client.</CmdDesc>
+                <CmdHeader>CE 09</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-SetOption.Request</CmdName>
+                <CmdDesc>Set socket options</CmdDesc>
+                <CmdHeader>CE 0A</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Level</ParmName>
+                        <ParmDesc>Socket Level</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>SOL_SOCKET</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>SOL_IP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>SOL_UDP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x03</ParmValue>
+                                <ParmText>SOL_TCP</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Option</ParmName>
+                        <ParmDesc>Socket Option</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>0000</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x0000</ParmValue>
+                                <ParmText>SO_TYPE</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0019</ParmValue>
+                                <ParmText>SO_BINDTODEVICE</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0004</ParmValue>
+                                <ParmText>SO_REUSEADDR</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0012</ParmValue>
+                                <ParmText>IPV6_MULTICAST_HOPS</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0010</ParmValue>
+                                <ParmText>IPV6_UNICAST_HOPS</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0014</ParmValue>
+                                <ParmText>IPV6_JOIN_GROUP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0021</ParmValue>
+                                <ParmText>IP_MULTICAST_TTL</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0023</ParmValue>
+                                <ParmText>IP_ADD_MEMBERSHIP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x0024</ParmValue>
+                                <ParmText>IP_DROP_MEMBERSHIP</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Option Value</ParmName>
+                        <ParmDesc>Socket Option Value</ParmDesc>
+                        <ParmSize>4</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00 00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00 00 00</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-GetOption.Request</CmdName>
+                <CmdDesc>Get socket option</CmdDesc>
+                <CmdHeader>CE 0B</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Level</ParmName>
+                        <ParmDesc>Socket Level</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>SOL_SOCKET</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>SOL_IP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>SOL_UDP</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x03</ParmValue>
+                                <ParmText>SOL_TCP</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Option</ParmName>
+                        <ParmDesc>Socket Option</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x0000</ParmValue>
+                                <ParmText>SO_TYPE</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x1002</ParmValue>
+                                <ParmText>SO_RCVBUF</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </Socket>
+        <NWKUtils>
+            <GroupDesc>NWK Utils commands</GroupDesc>
+            <Cmd>
+                <CmdName>NWKU_IfconfigBind.Request</CmdName>
+                <CmdDesc>Bind an IP address to an interface.</CmdDesc>
+                <CmdHeader>CE 0C</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Ip Address</ParmName>
+                        <ParmDesc>Ip Address</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Interface Id</ParmName>
+                        <ParmDesc>Interface Id</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NWKU_IfconfigAll.Request</CmdName>
+                <CmdDesc>Shows all the interfaces with their addresses.</CmdDesc>
+                <CmdHeader>CE 0D</CmdHeader>
+            </Cmd>
+            <Cmd>
+                <CmdName>NWKU_Ping.Request</CmdName>
+                <CmdDesc>Initiates a single ping request.</CmdDesc>
+                <CmdHeader>CE 0E</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Destination Ip Address</ParmName>
+                        <ParmDesc>Destination Ip Address</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Source Ip Address</ParmName>
+                        <ParmDesc>Source Ip Address</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Payload length</ParmName>
+                        <ParmDesc>Payload Length</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>32</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Timeout</ParmName>
+                        <ParmDesc>Timeout</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>2000</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </NWKUtils>
+        <VTUN>
+            <GroupDesc>Virtual TUN commands</GroupDesc>
+            <Cmd>
+                <CmdName>VTUNIPPacketSend.Request</CmdName>
+                <CmdDesc>Send an IP packet over VTUN interface</CmdDesc>
+                <CmdHeader>CE F2</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </VTUN>
+        <Dtls>
+            <GroupDesc>Dtls commands</GroupDesc>
+            <Cmd>
+                <CmdName>Dtls-Open.Request</CmdName>
+                <CmdDesc>Dtls Open</CmdDesc>
+                <CmdHeader>CE 30</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Maximum retransmissions count</ParmName>
+                        <ParmDesc>Maximum Retransmissions Count</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>5</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Timeout</ParmName>
+                        <ParmDesc>Timeout</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 14</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Local Port</ParmName>
+                        <ParmDesc>The local port.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Close.Request</CmdName>
+                <CmdDesc>Dtls Close</CmdDesc>
+                <CmdHeader>CE 31</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Context Number</ParmName>
+                        <ParmDesc>Context Number</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-ClosePeer.Request</CmdName>
+                <CmdDesc>Dtls Close Peer</CmdDesc>
+                <CmdHeader>CE 32</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Peer Number</ParmName>
+                        <ParmDesc>Peer Number</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Connect.Request</CmdName>
+                <CmdDesc>Dtls Connect</CmdDesc>
+                <CmdHeader>CE 33</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Context Number</ParmName>
+                        <ParmDesc>Context Number</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Server IP Address</ParmName>
+                        <ParmDesc>Server IP Address</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Server Port</ParmName>
+                        <ParmDesc>Server Port</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Send.Request</CmdName>
+                <CmdDesc>Dtls Send</CmdDesc>
+                <CmdHeader>CE 35</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>Peer Number</ParmName>
+                        <ParmDesc>Peer Number</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </Dtls>
+    </Commands>
+    <Events>
+        <Socket>
+            <Cmd>
+                <CmdName>Socket-Create.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket create request.</CmdDesc>
+                <CmdHeader>CF 00</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Socket Index</ParmName>
+                        <ParmDesc>The socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Shutdown.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket shutdown request.</CmdDesc>
+                <CmdHeader>CF 01</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Bind.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket bind request.</CmdDesc>
+                <CmdHeader>CF 02</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Send.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket send request.</CmdDesc>
+                <CmdHeader>CF 03</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-SendTo.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket send request.</CmdDesc>
+                <CmdHeader>CF 04</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Receive.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket receive request.</CmdDesc>
+                <CmdHeader>CF 05</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-ReceiveFrom.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket receive request.</CmdDesc>
+                <CmdHeader>CF 06</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RemoteIpAddress</ParmName>
+                        <ParmDesc>The remote IP address.</ParmDesc>
+                        <ParmSize>16</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmDefaultValue>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>RemotePort</ParmName>
+                        <ParmDesc>The remote port.</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Connect.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket connect request.</CmdDesc>
+                <CmdHeader>CF 07</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Listen.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket listen request.</CmdDesc>
+                <CmdHeader>CF 08</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-Accept.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket accept request.</CmdDesc>
+                <CmdHeader>CF 09</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Connected Socket Index</ParmName>
+                        <ParmDesc>The connected socket index.</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-SetOption.Confirm</CmdName>
+                <CmdDesc>Confirmation of the socket set option request.</CmdDesc>
+                <CmdHeader>CF 0A</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Socket-GetOption.Confirm</CmdName>
+                <CmdDesc>Get socket option.</CmdDesc>
+                <CmdHeader>CF 0B</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Option Value</ParmName>
+                        <ParmDesc>Option Value</ParmDesc>
+                        <ParmSize>4</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </Socket>
+        <NWKConfiguration>
+            <Cmd>
+                <CmdName>NwkConfig_SetMACParameters.Confirm</CmdName>
+                <CmdDesc>Confirmation of the MAC parameters setting.</CmdDesc>
+                <CmdHeader>CF 11</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkConfig_AddNodeToWhiteList.Confirm</CmdName>
+                <CmdDesc>Confirmation of the addition of a new entry in the White List table.</CmdDesc>
+                <CmdHeader>CF 12</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkConfig_Start.Confirm</CmdName>
+                <CmdDesc>Confirmation of the start network request.</CmdDesc>
+                <CmdHeader>CF 10</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NwkData_SetDHCPServer.Confirm</CmdName>
+                <CmdDesc>Confirmation of DHCP server service setting.</CmdDesc>
+                <CmdHeader>CF 20</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+			
+			<Cmd>
+		     <CmdName>NwkData_SetExtRoute.Confirm</CmdName>
+                <CmdDesc>Confirmation of external route setting.</CmdDesc>
+                <CmdHeader>CF 21</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+			
+			<Cmd>
+		      <CmdName>NwkData_Propagate.Confirm</CmdName>
+                <CmdDesc>Confirmation of the network data propagation request.</CmdDesc>
+                <CmdHeader>CF 22</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+			
+			<Cmd>
+		        <CmdName>NwkData_Register.Confirm</CmdName>
+                <CmdDesc>Confirmation of network data register request.</CmdDesc>
+                <CmdHeader>CF 23</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>The selected configuration is not valid</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </NWKConfiguration>
+        <NWKUtils>
+            <Cmd>
+                <CmdName>NWKU_IfconfigBind.Confirm</CmdName>
+                <CmdDesc>Confirmation of the bind to interface request.</CmdDesc>
+                <CmdHeader>CF 0C</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x01</ParmValue>
+                                <ParmText>Addresses maximum limit reached</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NWKU_IfconfigAll.Response</CmdName>
+                <CmdDesc>Response to IfconfigAll request.</CmdDesc>
+                <CmdHeader>CF 0D</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>CountInterfaces</ParmName>
+                        <ParmDesc>Number of interfaces</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmRange>0x00-0x0f</ParmRange>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>InterfaceID</ParmName>
+                        <ParmDesc>The interface ID.</ParmDesc>
+                        <ParmSize>0</ParmSize>
+                        <ParmType>tStruct</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>CountInterfaces</DependName>
+                                <DependMask>0xFF</DependMask>
+                                <DependShift>0x00</DependShift>
+                            </Depend>
+                            <Parm>
+                                <ParmName>InterfaceID</ParmName>
+                                <ParmDesc>The interface ID.</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEdit</ParmType>
+                                <ParmLastValue>00</ParmLastValue>
+                                <ParmDefaultValue>00</ParmDefaultValue>
+                            </Parm>
+                            <Parm>
+                                <ParmName>CountIpAddresses</ParmName>
+                                <ParmDesc>Number of IP addresses</ParmDesc>
+                                <ParmSize>1</ParmSize>
+                                <ParmType>tEdit</ParmType>
+                                <ParmLastValue>00</ParmLastValue>
+                                <ParmDefaultValue>00</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <ParmRange>0x00-0x0f</ParmRange>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                            <Parm>
+                                <ParmName>Adresses</ParmName>
+                                <ParmDesc>Adresses</ParmDesc>
+                                <ParmSize>16</ParmSize>
+                                <ParmType>tArray</ParmType>
+                                <ParmLastValue>00</ParmLastValue>
+                                <ParmDefaultValue>00</ParmDefaultValue>
+                                <ParmTypeSpecifics>
+                                    <Depend>
+                                        <DependName>CountIpAddresses</DependName>
+                                        <DependMask>0xFF</DependMask>
+                                        <DependShift>0x00</DependShift>
+                                    </Depend>
+                                </ParmTypeSpecifics>
+                            </Parm>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>NWKU_Ping.Confirm</CmdName>
+                <CmdDesc>The response to ping request.</CmdDesc>
+                <CmdHeader>CF 0E</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x02</ParmValue>
+                                <ParmText>Request Timeout</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0x03</ParmValue>
+                                <ParmText>Wrong destination address</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Interval</ParmName>
+                        <ParmDesc>Interval</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </NWKUtils>
+        <VTUN>
+            <GroupDesc>Virtual TUN Test Reply</GroupDesc>
+            <Cmd>
+                <CmdName>VTUNIPPacketReceived.Confirm</CmdName>
+                <CmdDesc>Received an IP packet from the VTUN interface</CmdDesc>
+                <CmdHeader>CF F3</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>IPpayload</ParmName>
+                        <ParmDesc>IP payload</ParmDesc>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </VTUN>
+        <Dtls>
+            <Cmd>
+                <CmdName>Dtls-Open.Confirm</CmdName>
+                <CmdDesc>Dtls-Open.Confirm</CmdDesc>
+                <CmdHeader>CF 30</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Context Index</ParmName>
+                        <ParmDesc>Context Index</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Close.Confirm</CmdName>
+                <CmdDesc>Dtls-Close.Confirm</CmdDesc>
+                <CmdHeader>CF 31</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-ClosePeer.Confirm</CmdName>
+                <CmdDesc>Dtls-ClosePeer.Confirm</CmdDesc>
+                <CmdHeader>CF 32</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Connect.Confirm</CmdName>
+                <CmdDesc>Dtls-Connect.Confirm</CmdDesc>
+                <CmdHeader>CF 33</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Peer Index</ParmName>
+                        <ParmDesc>Peer Index</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-ClientConnected.Confirm</CmdName>
+                <CmdDesc>Dtls-ClientConnected.Confirm</CmdDesc>
+                <CmdHeader>CF 34</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Peer Index</ParmName>
+                        <ParmDesc>Peer Index</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Send.Confirm</CmdName>
+                <CmdDesc>Dtls-Send.Confirm</CmdDesc>
+                <CmdHeader>CF 35</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Status</ParmName>
+                        <ParmDesc>Status</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEnum</ParmType>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <ParmItem>
+                                <ParmValue>0x00</ParmValue>
+                                <ParmText>OK</ParmText>
+                            </ParmItem>
+                            <ParmItem>
+                                <ParmValue>0xFF</ParmValue>
+                                <ParmText>ERROR</ParmText>
+                            </ParmItem>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+            <Cmd>
+                <CmdName>Dtls-Receive.Confirm</CmdName>
+                <CmdDesc>Dtls-Receive.Confirm</CmdDesc>
+                <CmdHeader>CF 36</CmdHeader>
+                <CmdParms>
+                    <Parm>
+                        <ParmName>PayloadLength</ParmName>
+                        <ParmDesc>Length of the payload</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tInt</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Peer Index</ParmName>
+                        <ParmDesc>Peer Index</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Size</ParmName>
+                        <ParmDesc>The number of payload bytes</ParmDesc>
+                        <ParmSize>2</ParmSize>
+                        <ParmType>tEdit</ParmType>
+                        <ParmLastValue>00 00</ParmLastValue>
+                        <ParmDefaultValue>00 00</ParmDefaultValue>
+                    </Parm>
+                    <Parm>
+                        <ParmName>Data</ParmName>
+                        <ParmDesc>Data</ParmDesc>
+                        <ParmSize>1</ParmSize>
+                        <ParmType>tArray</ParmType>
+                        <ParmLastValue>00</ParmLastValue>
+                        <ParmDefaultValue>00</ParmDefaultValue>
+                        <ParmTypeSpecifics>
+                            <Depend>
+                                <DependName>Size</DependName>
+                                <DependMask>0xFFFF</DependMask>
+                                <DependShift>0x0000</DependShift>
+                            </Depend>
+                        </ParmTypeSpecifics>
+                    </Parm>
+                </CmdParms>
+            </Cmd>
+        </Dtls>
+    </Events>
+    <Settings>
+        <Endian>Little</Endian>
+        <LengthFieldSize>2</LengthFieldSize>
+        <DefaultCmds>
+            <CmdName>Socket-Create.Request</CmdName>
+        </DefaultCmds>
+        <CmdHistory></CmdHistory>
+    </Settings>
+</NetworkIP>
